@@ -4,6 +4,7 @@
 ## What is TypeScript?
 
 * TypeScript is a superset of JavaScript that adds optional static typing to the language. This means you can define the data types of variables, functions, and other elements in your code. TypeScript code is then compiled into regular JavaScript that can run in any browser or environment that supports JavaScript.
+* Statically typed so types checked at compile time while js is dynamically typed hence types checked at runtime
 
 ## Setup
 
@@ -16,3 +17,5 @@
 -  tsc --init
 -  Regiser the ./root{ ./src } and outDir{ ./build/js} on the config file
 
+## other resources
+- compilin without errors tsc --noEmitOnError -w
