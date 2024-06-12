@@ -1,67 +1,26 @@
-let strArray = ['two','hello', 'Nelly'];
+//TYpe aliases
 
-let football = ['soccerball', 2354, 'Klopp'];
-
-let mixedData = ['evh',1997, true];
-
-//only knows the types  not the order
-strArray[1] = 'Wangari';
-strArray.push('Hello');
-
-//   strArray = football;
-
-football = strArray;
-
-//tuple - specific lengths and order 
-let myTuple: [number, boolean, String ];
-let variable = [1, true, 'Nelly'];
-
-//objects
-let myObject: object;
-myObject = [];
-
-const userData = {
-    name: 'Cathy',
-    DOB: 1996,
-    active: true
-}
-
-userData.active = true;
-
-// custom types 
-//type and interfaces - like a class
-interface userDetails {
+type stringOrNumberArray = (string | number)[];
+type userDetails  = {
     name?: string,
     DOB: number,   //making a property optional
     active: boolean,
-    accounts: (number | string)[]; //NB Syntax
+    accounts: stringOrNumberArray  // type alias
 }
 
-let member1: userDetails = {
-    // name: 'Cathy',
-    DOB: 1996,
-    active: false,
-    accounts: ['Mavuno', 27154, 'Fixed']
-}
- 
-const registerUser = (user: userDetails) => {
-    if (user.name){
-        return `Registered ${ user.name.toUpperCase()}`;
-    }
-    return `Registered!`
-    
+
+//literals
+let userName = 'Nelly';
+let myName: 'Nelly' | 'Wangari' | 'Kamenya';
+myName = 'Kamenya';
+
+//function 
+
+const multiply = (a: number , b: number ):  number  => {
+   return a * b;
 };
 
-console.log(registerUser(member1));
+const logMsg = (message: any): void => {
+    console.log(message);
+};
 
-
-//Enums - added during runtime.
-
-enum Grade {
-    E = 3,
-    D,
-    C,
-    B,
-    A
-}
-console.log(Grade.D);
