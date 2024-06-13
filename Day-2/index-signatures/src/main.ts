@@ -62,3 +62,13 @@ Object.keys(student).map(key => {
 type Streams = 'salaries' | 'bonus' | 'sidehustle'
 
 type Incomes = Record<Streams, number>
+
+const myIncome: Incomes = {
+  salaries: 500,
+  bonus: 100,
+  sidehustle: 300
+}
+
+for (const money in myIncome){
+  console.log(myIncome[money as keyof Incomes])
+}
