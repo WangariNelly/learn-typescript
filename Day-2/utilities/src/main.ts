@@ -37,3 +37,20 @@ interface Assignment {
       green: "OOFFOO",
       blue: "ooooff",
     };
+
+    type Students = "Sara" | "Kelly"; 
+    type LetterGrades = "A" | "B" | "C";
+     const finalGrades: Record<Students, LetterGrades> = {
+      "Sara": "B",
+     "Kelly": "C"
+     };
+
+     interface Grade {
+      assign1: number,
+      assign2: number,
+     }
+
+     const gradeData: Record<Students, Grade> = {
+      Sara: { assign1: 85, assign2: 93},
+      Kelly: { assign1: 90, assign2: 59},
+     }
