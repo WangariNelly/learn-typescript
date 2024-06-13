@@ -52,3 +52,13 @@ for (const key in student){
 Object.keys(student).map(key => {
   console.log(student[key as keyof typeof student])
 })
+
+//////////////////////////////////////////////////////////////
+// interface Incomes {
+//   [key: string]: number
+// }
+
+//providing a literal type as income we use utility type
+type Streams = 'salaries' | 'bonus' | 'sidehustle'
+
+type Incomes = Record<Streams, number>
