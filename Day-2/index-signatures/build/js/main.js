@@ -29,3 +29,11 @@ for (const key in student) {
 Object.keys(student).map(key => {
     console.log(student[key]);
 });
+const myIncome = {
+    salaries: 500,
+    bonus: 100,
+    sidehustle: 300
+};
+for (const money in myIncome) {
+    console.log(myIncome[money]);
+}

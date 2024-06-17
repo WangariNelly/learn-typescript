@@ -1,5 +1,5 @@
 ## TYPESCRIPT 
-- This README provides an introduction to the TypeScript project and how to get started using it.
+- This README provides an introduction to the TypeScript and how to get started using it.
 
 ## What is TypeScript?
 
@@ -15,7 +15,7 @@
 - create a folder.
 - mkdir build/index.html src/main.ts
 -  tsc --init
--  Regiser the ./root{ ./src } and outDir{ ./build/js} on the config file
+-  Register the ./root{ ./src } and outDir{ ./build/js} on the config file
 
 ## other resources
-- compilin without errors tsc --noEmitOnError -w
+- compiling without errors tsc --noEmitOnError -w

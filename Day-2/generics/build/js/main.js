@@ -9,3 +9,11 @@ console.log(isObj('Nelly'));
 console.log(isObj(34));
 console.log(isObj(null));
 console.log(isObj({ name: 'John' }));
+
+
+// const isTrue = <T>(arg: T): {arg: T, is: boolean} => {
+// if (Array.isArray(arg) && !arg.length)
+// return {
+// arg,is: false
+// }
+// }
